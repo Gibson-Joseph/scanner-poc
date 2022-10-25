@@ -22,7 +22,7 @@ import './DWTView.css';
  let navigatorWidth = "585px";
  let imageEditor;
 
-export default function DWTView(props){
+export default function DWTVie(props){
 
     if (props.blocks !== undefined) {
         switch (props.blocks) {
