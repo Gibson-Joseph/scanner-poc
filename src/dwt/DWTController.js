@@ -770,7 +770,7 @@ export default function DWTController(props){
                             </div>
                         </li>
                     ) : ""}
-                    {props.features & 0b10 ? (
+                    {/* {props.features & 0b10 ? (
                         <li>
                             <div className="divType" tabIndex="2" controlindex="2" onClick={(event) => handleTabs(event)} onKeyUp={(event) => handleTabs(event)}>
                                 <div className={shownTabs & 2 ? "mark_arrow expanded" : "mark_arrow collapsed"} ></div>
@@ -805,8 +805,8 @@ export default function DWTController(props){
                                 </ul>
                             </div>
                         </li>
-                    ) : ""}
-                    {props.features & 0b100 ? (
+                    ) : ""} */}
+                    {/* {props.features & 0b100 ? (
                         <li>
                             <div className="divType" tabIndex="3" controlindex="4" onClick={(event) => handleTabs(event)} onKeyUp={(event) => handleTabs(event)}>
                                 <div className={shownTabs & 4 ? "mark_arrow expanded" : "mark_arrow collapsed"} ></div>
@@ -819,7 +819,7 @@ export default function DWTController(props){
                                 </ul>
                             </div>
                         </li>
-                    ) : ""}
+                    ) : ""} */}
                     {(props.features & 0b1000) || (props.features & 0b10000) ? (
                         <li>
                             <div className="divType" tabIndex="4" controlindex="8" onClick={(event) => handleTabs(event)} onKeyUp={(event) => handleTabs(event)}>
@@ -855,7 +855,7 @@ export default function DWTController(props){
                             </div>
                         </li>
                     ) : ""}
-                    {(props.features & 0b100000) || (props.features & 0b1000000) ? (
+                    {/* {(props.features & 0b100000) || (props.features & 0b1000000) ? (
                         <li>
                             <div className="divType" tabIndex="5" controlindex="16" onClick={(event) => handleTabs(event)} onKeyUp={(event) => handleTabs(event)}>
                                 <div className={shownTabs & 16 ? "mark_arrow expanded" : "mark_arrow collapsed"} ></div>
@@ -872,7 +872,7 @@ export default function DWTController(props){
                                 </ul>
                             </div>
                         </li>
-                    ) : ""}
+                    ) : ""} */}
                 </ul>
             </div>
             {bShowRangePicker ? (
