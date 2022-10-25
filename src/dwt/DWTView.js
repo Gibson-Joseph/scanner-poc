@@ -22,7 +22,7 @@ import './DWTView.css';
  let navigatorWidth = "585px";
  let imageEditor;
 
-export default function DWTVie(props){
+export default function DWTView(props){
 
     if (props.blocks !== undefined) {
         switch (props.blocks) {
@@ -170,7 +170,7 @@ export default function DWTVie(props){
             <div style={{ display: viewReady ? "none" : "block" }} className="DWTcontainerTop"></div>
             <div style={{ display: viewReady ? "block" : "none" }} className="DWTcontainerTop">
                 <div style={(props.blocks & 2 && viewReady) ? { display: "block" } : { display: "none" }} className="divEdit">
-                    <ul className="operateGrp" onKeyUp={(event) => handleQuickEdit(event)} onClick={(event) => handleQuickEdit(event)}>
+                    {/* <ul className="operateGrp" onKeyUp={(event) => handleQuickEdit(event)} onClick={(event) => handleQuickEdit(event)}>
                         <li><img tabIndex="6" value="editor" src="Images/ShowEditor.png" title="Show Image Editor" alt="Show Editor" /> </li>
                         <li><img tabIndex="6" value="rotateL" src="Images/RotateLeft.png" title="Rotate Left" alt="Rotate Left" /> </li>
                         <li><img tabIndex="6" value="rotateR" src="Images/RotateRight.png" title="Rotate Right" alt="Rotate Right" /> </li>
@@ -181,7 +181,7 @@ export default function DWTVie(props){
                         <li><img tabIndex="6" value="removeA" src="Images/RemoveAllImages.png" title="Remove All Images" alt="Remove All" /></li>
                         <li><img tabIndex="6" value="changeSize" src="Images/ChangeSize.png" title="Change Image Size" alt="Change Size" /> </li>
                         <li><img tabIndex="6" value="crop" src="Images/Crop.png" title="Crop" alt="Crop" /></li>
-                    </ul>
+                    </ul> */}
                     <div className="ImgSizeEditor" style={bShowChangeSizeUI ? { visibility: "visible" } : { visibility: "hidden" }}>
                         <ul>
                             <li>
