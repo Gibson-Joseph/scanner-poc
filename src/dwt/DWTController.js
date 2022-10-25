@@ -726,7 +726,7 @@ export default function DWTController(props){
                                     </li>
                                     <li>
                                         <ul>
-                                            <li>
+                                            {/* <li>
                                                 {
                                                     deviceSetup.noUI ? "" : (
                                                         <label style={{ width: "32%", marginRight: "2%" }} ><input tabIndex="1" type="checkbox"
@@ -743,7 +743,7 @@ export default function DWTController(props){
                                                     checked={deviceSetup.bDuplex}
                                                     onChange={(e) => handleScannerSetupChange(e, "bDuplex")}
                                                 />Duplex</label>
-                                            </li>
+                                            </li> */}
                                             <li>
                                                 <select tabIndex="1" style={{ width: "48%", marginRight: "4%" }}
                                                     value={deviceSetup.nPixelType}
@@ -838,7 +838,7 @@ export default function DWTController(props){
                                         <label><input tabIndex="4" type="radio" value="png" name="ImageType" onClick={(e) => handleSaveConfigChange(e)} />PNG</label>
                                         <label><input tabIndex="4" type="radio" value="pdf" name="ImageType" onClick={(e) => handleSaveConfigChange(e)} />PDF</label>
                                     </li>
-                                    <li>
+                                    {/* <li>
                                         <label><input tabIndex="4" type="checkbox"
                                             checked={(saveFileFormat === "pdf" || saveFileFormat === "tif") && (bMulti ? "checked" : "")}
                                             value="multiPage" disabled={(saveFileFormat === "pdf" || saveFileFormat === "tif") ? "" : "disabled"} onChange={(e) => handleSaveConfigChange(e)} />Upload Multiple Pages</label>
@@ -846,10 +846,10 @@ export default function DWTController(props){
                                             ? <label>
                                                 <input tabIndex="4" title="Use Uploader" type="checkbox" onChange={(e) => toggleUseUploade(e)} />Use File Uploader</label>
                                             : ""}
-                                    </li>
+                                    </li> */}
                                     <li className="tc">
                                         {(props.features & 0b1000) ? <button tabIndex="4" className={props.buffer.count === 0 ? "majorButton disabled width_48p" : "majorButton enabled width_48p"} disabled={props.buffer.count === 0 ? "disabled" : ""} onClick={() => saveOrUploadImage('local')} >Save to Local</button> : ""}
-                                        {(props.features & 0b10000) ? <button tabIndex="4" className={props.buffer.count === 0 ? "majorButton disabled width_48p marginL_2p" : "majorButton enabled width_4p marginL_2p"} disabled={props.buffer.count === 0 ? "disabled" : ""} onClick={() => saveOrUploadImage('server')} >Upload to Server</button> : ""}
+                                        {/* {(props.features & 0b10000) ? <button tabIndex="4" className={props.buffer.count === 0 ? "majorButton disabled width_48p marginL_2p" : "majorButton enabled width_4p marginL_2p"} disabled={props.buffer.count === 0 ? "disabled" : ""} onClick={() => saveOrUploadImage('server')} >Upload to Server</button> : ""} */}
                                     </li>
                                 </ul>
                             </div>
